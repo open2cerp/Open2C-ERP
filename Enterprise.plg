@@ -1,0 +1,182 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Enterprise - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\▀\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "__STATPROFUIS_WITH_DLLMFC__" /D "_WINDLL" /D "_USRDLL" /Fr"../_build/Release/" /Fp"../_build/Release/Enterprise.pch" /Yu"stdafx.h" /Fo"../_build/Release/" /Fd"../_build/Release/" /FD /c 
+"D:\myProject\GPL 2c\2c\level0\CREDITS\CREDITS.CPP"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\▀\LOCALS~1\Temp\RSP129.tmp"" 
+Creating temporary file "C:\DOCUME~1\▀\LOCALS~1\Temp\RSP12A.bat" with contents
+[
+@echo off
+copy CREDITS\add.txt+CREDITS\CREDITS.CPP CREDITS\CREDITS2.CPP
+copy CREDITS\CREDITS2.CPP CREDITS\CREDITS.CPP
+]
+Creating command line ""C:\DOCUME~1\▀\LOCALS~1\Temp\RSP12A.bat""
+Compiling...
+CREDITS.CPP
+Creating temporary file "C:\DOCUME~1\▀\LOCALS~1\Temp\RSP12B.tmp" with contents
+[
+/nologo /version:7.6 /stack:0x200000 /subsystem:windows /incremental:no /pdb:"../_build/Release/Enterprise.pdb" /machine:I386 /out:"..\_build\bin\Enterprise.exe" 
+"\myProject\GPL 2c\2c\_build\Release\DialogUnit.obj"
+"\myProject\GPL 2c\2c\_build\Release\DocUnit.obj"
+"\myProject\GPL 2c\2c\_build\Release\FormFrame.obj"
+"\myProject\GPL 2c\2c\_build\Release\FormUnit.obj"
+"\myProject\GPL 2c\2c\_build\Release\MicroForm.obj"
+"\myProject\GPL 2c\2c\_build\Release\OpenForm.obj"
+"\myProject\GPL 2c\2c\_build\Release\DocList.obj"
+"\myProject\GPL 2c\2c\_build\Release\FileMeta.obj"
+"\myProject\GPL 2c\2c\_build\Release\Metadata.obj"
+"\myProject\GPL 2c\2c\_build\Release\MetadataTree.obj"
+"\myProject\GPL 2c\2c\_build\Release\MetaObject.obj"
+"\myProject\GPL 2c\2c\_build\Release\MetedataDocument.obj"
+"\myProject\GPL 2c\2c\_build\Release\ModuleDoc.obj"
+"\myProject\GPL 2c\2c\_build\Release\ModuleManager.obj"
+"\myProject\GPL 2c\2c\_build\Release\ModuleView.obj"
+"\myProject\GPL 2c\2c\_build\Release\ObjInfo.obj"
+"\myProject\GPL 2c\2c\_build\Release\ChangeOrder.obj"
+"\myProject\GPL 2c\2c\_build\Release\ChildFrm.obj"
+"\myProject\GPL 2c\2c\_build\Release\DebugMessageBar.obj"
+"\myProject\GPL 2c\2c\_build\Release\EditWnd.obj"
+"\myProject\GPL 2c\2c\_build\Release\Enterprise.obj"
+"\myProject\GPL 2c\2c\_build\Release\Enterprise.res"
+"\myProject\GPL 2c\2c\_build\Release\FindTextDialog.obj"
+"\myProject\GPL 2c\2c\_build\Release\FunctionList.obj"
+"\myProject\GPL 2c\2c\_build\Release\InputDate.obj"
+"\myProject\GPL 2c\2c\_build\Release\InputDialog.obj"
+"\myProject\GPL 2c\2c\_build\Release\InputNumeric.obj"
+"\myProject\GPL 2c\2c\_build\Release\InputPeriod.obj"
+"\myProject\GPL 2c\2c\_build\Release\LineInput.obj"
+"\myProject\GPL 2c\2c\_build\Release\MainFrm.obj"
+"\myProject\GPL 2c\2c\_build\Release\MessageBar.obj"
+"\myProject\GPL 2c\2c\_build\Release\MyEdit.obj"
+"\myProject\GPL 2c\2c\_build\Release\ReportManager.obj"
+"\myProject\GPL 2c\2c\_build\Release\StackBar.obj"
+"\myProject\GPL 2c\2c\_build\Release\StdAfx.obj"
+"\myProject\GPL 2c\2c\_build\Release\ChooseValue.obj"
+"\myProject\GPL 2c\2c\_build\Release\Methods.obj"
+"\myProject\GPL 2c\2c\_build\Release\Value.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueArray.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueComboBox.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueContext.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueControl.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueFileSystem.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueForm.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueGrid.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueGridExt.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueList.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueListBox.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueListLayers.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueMenu.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueMeta.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueMetaFile.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueModule.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueObject.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueOLE.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueSQL.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueText.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueToolBar.obj"
+"\myProject\GPL 2c\2c\_build\Release\ValueTreeCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\SPELL.obj"
+"\myProject\GPL 2c\2c\_build\Release\StringExt.obj"
+"\myProject\GPL 2c\2c\_build\Release\CompileModule.obj"
+"\myProject\GPL 2c\2c\_build\Release\Functions.obj"
+"\myProject\GPL 2c\2c\_build\Release\OutToDebug.obj"
+"\myProject\GPL 2c\2c\_build\Release\ProcUnit.obj"
+"\myProject\GPL 2c\2c\_build\Release\SystemFunctions.obj"
+"\myProject\GPL 2c\2c\_build\Release\TranslateModule.obj"
+"\myProject\GPL 2c\2c\_build\Release\1CCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\amsEdit.obj"
+"\myProject\GPL 2c\2c\_build\Release\CalcBtn.obj"
+"\myProject\GPL 2c\2c\_build\Release\DropEdit.obj"
+"\myProject\GPL 2c\2c\_build\Release\PromptEdit.obj"
+"\myProject\GPL 2c\2c\_build\Release\secaux.obj"
+"\myProject\GPL 2c\2c\_build\Release\SecCalc2.obj"
+"\myProject\GPL 2c\2c\_build\Release\sloadbmp.obj"
+"\myProject\GPL 2c\2c\_build\Release\xrnumericedit.obj"
+"\myProject\GPL 2c\2c\_build\Release\EditLog.obj"
+"\myProject\GPL 2c\2c\_build\Release\SubclassWnd.obj"
+"\myProject\GPL 2c\2c\_build\Release\timedmsgbox.obj"
+"\myProject\GPL 2c\2c\_build\Release\DynMenu.obj"
+"\myProject\GPL 2c\2c\_build\Release\MenuListBox.obj"
+"\myProject\GPL 2c\2c\_build\Release\DirDialog.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridCellCombo.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridURLCell.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridCtrlExt.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridDoc.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridView.obj"
+"\myProject\GPL 2c\2c\_build\Release\Moxcel.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridCell.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridCellBase.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\GridDropTarget.obj"
+"\myProject\GPL 2c\2c\_build\Release\InPlaceEdit.obj"
+"\myProject\GPL 2c\2c\_build\Release\TitleTip.obj"
+"\myProject\GPL 2c\2c\_build\Release\DocSelect.obj"
+"\myProject\GPL 2c\2c\_build\Release\MenuButton.obj"
+"\myProject\GPL 2c\2c\_build\Release\SwitcherButton.obj"
+"\myProject\GPL 2c\2c\_build\Release\CREDITS.OBJ"
+"\myProject\GPL 2c\2c\_build\Release\DragFormView.obj"
+"\myProject\GPL 2c\2c\_build\Release\IconListBox.obj"
+"\myProject\GPL 2c\2c\_build\Release\FListCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\RichEditCtrlGS.obj"
+"\myProject\GPL 2c\2c\_build\Release\AutocomplectionCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\CCrystalEditView.obj"
+"\myProject\GPL 2c\2c\_build\Release\CCrystalTextBuffer.obj"
+"\myProject\GPL 2c\2c\_build\Release\CCrystalTextView.obj"
+"\myProject\GPL 2c\2c\_build\Release\CCrystalTextView2.obj"
+"\myProject\GPL 2c\2c\_build\Release\CEditReplaceDlg.obj"
+"\myProject\GPL 2c\2c\_build\Release\CFindTextDlg.obj"
+"\myProject\GPL 2c\2c\_build\Release\ImageButton.obj"
+"\myProject\GPL 2c\2c\_build\Release\PopupMenu.obj"
+"\myProject\GPL 2c\2c\_build\Release\ViewManager.obj"
+"\myProject\GPL 2c\2c\_build\Release\WindowManager.obj"
+"\myProject\GPL 2c\2c\_build\Release\WindowTabCtrl.obj"
+"\myProject\GPL 2c\2c\_build\Release\CntrItem.obj"
+"\myProject\GPL 2c\2c\_build\Release\CntrItemEg.obj"
+"\myProject\GPL 2c\2c\_build\Release\MyHelpDoc.obj"
+"\myProject\GPL 2c\2c\_build\Release\MyHelpView.obj"
+"\myProject\GPL 2c\2c\_build\Release\ColorButton.obj"
+"\myProject\GPL 2c\2c\_build\Release\ColourPopup.obj"
+"\myProject\GPL 2c\2c\_build\Release\ObjectInspector.obj"
+"\myProject\GPL 2c\2c\_build\Release\PropertyBar.obj"
+"\myProject\GPL 2c\2c\_build\Release\DblSubclassWnd.obj"
+"\myProject\GPL 2c\2c\_build\Release\DynControl.obj"
+"\myProject\GPL 2c\2c\_build\Release\FormDialog.obj"
+"\myProject\GPL 2c\2c\_build\Release\FormEditor.obj"
+"\myProject\GPL 2c\2c\_build\Release\LayerSelect.obj"
+"\myProject\GPL 2c\2c\_build\Release\MultiRectTracker.obj"
+"\myProject\GPL 2c\2c\_build\Release\MySQL.obj"
+"\myProject\GPL 2c\2c\_build\Release\MySQL0.obj"
+"\myProject\GPL 2c\2c\_build\Release\MySQL1.obj"
+"\myProject\GPL 2c\2c\_build\Release\ODBCRecordset.obj"
+"\myProject\GPL 2c\2c\_build\Release\OXTabView.obj"
+"\myProject\GPL 2c\2c\_build\Release\XColorStatic.obj"
+"\myProject\GPL 2c\2c\_build\Release\XHyperLink.obj"
+"\myProject\GPL 2c\2c\_build\Release\MyDataExchange.obj"
+"\myProject\GPL 2c\2c\_build\Release\MyDropTarget.obj"
+"\myProject\GPL 2c\2c\_build\GUI-DLL\ProfUIS221ym.lib"
+]
+Creating command line "link.exe @"C:\DOCUME~1\▀\LOCALS~1\Temp\RSP12B.tmp""
+
+CREDITS\add.txt
+CREDITS\CREDITS.CPP
+Скопировано файлов:         1.
+Скопировано файлов:         1.
+<h3>Output Window</h3>
+Linking...
+   Creating library ..\_build\bin\Enterprise.lib and object ..\_build\bin\Enterprise.exp
+
+
+
+<h3>Results</h3>
+Enterprise.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

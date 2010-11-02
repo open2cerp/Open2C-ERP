@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZipArchive - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP126.tmp" with contents
+[
+/nologo /MD /W3 /GX /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "ZLIB_DLL" /D "_AFXDLL" /Fp"../../_build/ReleaseZip/ZipArchive.pch" /Yu"stdafx.h" /Fo"../../_build/ReleaseZip/" /Fd"../../_build/ReleaseZip/" /FD /c 
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipArchive.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipAutoBuffer.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipBigFile.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipCentralDir.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipException.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipFileHeader.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipInternalInfo.cpp"
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\ZipStorage.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP126.tmp"" 
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP127.tmp" with contents
+[
+/nologo /MD /W3 /GX /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "ZLIB_DLL" /D "_AFXDLL" /Fp"../../_build/ReleaseZip/ZipArchive.pch" /Yc"stdafx.h" /Fo"../../_build/ReleaseZip/" /Fd"../../_build/ReleaseZip/" /FD /c 
+"D:\myProject\GPL 2c\2c\level0\ZipArchive\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP127.tmp"" 
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+/nologo /out:"../../_build/ReleaseZip/ZipArchive.lib" 
+".\zlib.lib"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\StdAfx.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipArchive.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipAutoBuffer.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipBigFile.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipCentralDir.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipException.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipFileHeader.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipInternalInfo.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseZip\ZipStorage.obj"
+]
+Creating command line "link.exe -lib @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP128.tmp""
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ZipArchive.cpp
+ZipAutoBuffer.cpp
+ZipBigFile.cpp
+ZipCentralDir.cpp
+ZipException.cpp
+ZipFileHeader.cpp
+ZipInternalInfo.cpp
+ZipStorage.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+ZipArchive.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

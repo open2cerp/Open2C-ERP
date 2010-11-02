@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding = "windows-1251"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="ServerCOM"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="AtlProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release MinSize|Win32"
+			OutputDirectory=".\../../_build/ReleaseMinSize"
+			IntermediateDirectory=".\../../_build/ReleaseMinSize"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			UseOfATL="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\../../_build/ReleaseMinSize/ServerCOM.pch"
+				AssemblerListingLocation=".\../../_build/ReleaseMinSize/"
+				ObjectFile=".\../../_build/ReleaseMinSize/"
+				ProgramDataBaseFileName=".\../../_build/ReleaseMinSize/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile="../../_build/bin/ServerCOM.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				ProgramDatabaseFile=".\../../_build/ReleaseMinSize/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\../../_build/ReleaseMinSize/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\../../_build/ReleaseMinSize/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;NDEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release MinDependency|Win32"
+			OutputDirectory=".\../../_build/ReleaseUMinDependency"
+			IntermediateDirectory=".\../../_build/ReleaseUMinDependency"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			UseOfATL="1"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\../../_build/ReleaseUMinDependency/ServerCOM.pch"
+				AssemblerListingLocation=".\../../_build/ReleaseUMinDependency/"
+				ObjectFile=".\../../_build/ReleaseUMinDependency/"
+				ProgramDataBaseFileName=".\../../_build/ReleaseUMinDependency/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile=".\../../_build/ReleaseUMinDependency/ServerCOM.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				ProgramDatabaseFile=".\../../_build/ReleaseUMinDependency/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\../../_build/ReleaseUMinDependency/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\../../_build/ReleaseUMinDependency/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;NDEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release MinDependency|Win32"
+			OutputDirectory=".\../../_build/ReleaseMinDependency"
+			IntermediateDirectory=".\../../_build/ReleaseMinDependency"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			UseOfATL="1"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\../../_build/ReleaseMinDependency/ServerCOM.pch"
+				AssemblerListingLocation=".\../../_build/ReleaseMinDependency/"
+				ObjectFile=".\../../_build/ReleaseMinDependency/"
+				ProgramDataBaseFileName=".\../../_build/ReleaseMinDependency/"
+				BrowseInformation="1"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile="../../_build/bin/ServerCOM.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				ProgramDatabaseFile=".\../../_build/ReleaseMinDependency/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\../../_build/ReleaseMinDependency/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\../../_build/ReleaseMinDependency/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;NDEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory=".\../../../ServerCOMDebug"
+			IntermediateDirectory=".\../../../ServerCOMDebug"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\../../../ServerCOMDebug/ServerCOM.pch"
+				AssemblerListingLocation=".\../../../ServerCOMDebug/"
+				ObjectFile=".\../../../ServerCOMDebug/"
+				ProgramDataBaseFileName=".\../../../ServerCOMDebug/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile="c:\2c\ServerCOM.dll"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\../../../ServerCOMDebug/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\../../../ServerCOMDebug/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\../../../ServerCOMDebug/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;_DEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Debug|Win32"
+			OutputDirectory=".\DebugU"
+			IntermediateDirectory=".\DebugU"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\DebugU/ServerCOM.pch"
+				AssemblerListingLocation=".\DebugU/"
+				ObjectFile=".\DebugU/"
+				ProgramDataBaseFileName=".\DebugU/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile=".\DebugU/ServerCOM.dll"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\DebugU/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\DebugU/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\DebugU/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;_DEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release MinSize|Win32"
+			OutputDirectory=".\ReleaseUMinSize"
+			IntermediateDirectory=".\ReleaseUMinSize"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			UseOfATL="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\ReleaseUMinSize/ServerCOM.pch"
+				AssemblerListingLocation=".\ReleaseUMinSize/"
+				ObjectFile=".\ReleaseUMinSize/"
+				ProgramDataBaseFileName=".\ReleaseUMinSize/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"
+				Description="Performing registration"
+				CommandLine="if &quot;%OS%&quot;==&quot;&quot; goto NOTNT
+if not &quot;%OS%&quot;==&quot;Windows_NT&quot; goto NOTNT
+regsvr32 /s /c &quot;$(TargetPath)&quot;
+echo regsvr32 exec. time &gt; &quot;$(OutDir)\regsvr32.trg&quot;
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+"
+				Outputs="$(OutDir)\regsvr32.trg"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile=".\ReleaseUMinSize/ServerCOM.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ModuleDefinitionFile=".\ServerCOM.def"
+				ProgramDatabaseFile=".\ReleaseUMinSize/ServerCOM.pdb"
+				SubSystem="2"
+				ImportLibrary=".\ReleaseUMinSize/ServerCOM.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\ReleaseUMinSize/ServerCOM.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;NDEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath=".\Connect.cpp">
+			</File>
+			<File
+				RelativePath=".\ServerCOM.cpp">
+			</File>
+			<File
+				RelativePath=".\ServerCOM.def">
+			</File>
+			<File
+				RelativePath=".\ServerCOM.idl">
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCMIDLTool"
+						GenerateStublessProxies="TRUE"
+						TypeLibraryName=".\ServerCOM.tlb"
+						HeaderFileName="ServerCOM.h"
+						InterfaceIdentifierFileName="ServerCOM_i.c"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\ServerCOM.rc">
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						AdditionalIncludeDirectories="$(OUTDIR);$(NoInherit)"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\StdAfx.cpp">
+				<FileConfiguration
+					Name="Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release MinDependency|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release MinSize|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath=".\Connect.h">
+			</File>
+			<File
+				RelativePath=".\Resource.h">
+			</File>
+			<File
+				RelativePath=".\StdAfx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath=".\Connect.rgs">
+			</File>
+		</Filter>
+		<File
+			RelativePath="..\..\_build\bin\Enterprise.lib">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
