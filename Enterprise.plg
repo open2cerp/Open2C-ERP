@@ -6,22 +6,22 @@
 --------------------Configuration: Enterprise - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP129.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP9E.tmp" with contents
 [
 /nologo /MD /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "__STATPROFUIS_WITH_DLLMFC__" /D "_WINDLL" /D "_USRDLL" /Fr"../_build/Release/" /Fp"../_build/Release/Enterprise.pch" /Yu"stdafx.h" /Fo"../_build/Release/" /Fd"../_build/Release/" /FD /c 
 "D:\myProject\GPL 2c\2c\level0\CREDITS\CREDITS.CPP"
 ]
-Creating command line "cl.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP129.tmp"" 
-Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12A.bat" with contents
+Creating command line "cl.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP9E.tmp"" 
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP9F.bat" with contents
 [
 @echo off
 copy CREDITS\add.txt+CREDITS\CREDITS.CPP CREDITS\CREDITS2.CPP
 copy CREDITS\CREDITS2.CPP CREDITS\CREDITS.CPP
 ]
-Creating command line ""C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12A.bat""
+Creating command line ""C:\DOCUME~1\ß\LOCALS~1\Temp\RSP9F.bat""
 Compiling...
 CREDITS.CPP
-Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12B.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA0.tmp" with contents
 [
 /nologo /version:7.6 /stack:0x200000 /subsystem:windows /incremental:no /pdb:"../_build/Release/Enterprise.pdb" /machine:I386 /out:"..\_build\bin\Enterprise.exe" 
 "\myProject\GPL 2c\2c\_build\Release\DialogUnit.obj"
@@ -45,7 +45,6 @@ Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12B.tmp" with contents
 "\myProject\GPL 2c\2c\_build\Release\DebugMessageBar.obj"
 "\myProject\GPL 2c\2c\_build\Release\EditWnd.obj"
 "\myProject\GPL 2c\2c\_build\Release\Enterprise.obj"
-"\myProject\GPL 2c\2c\_build\Release\Enterprise.res"
 "\myProject\GPL 2c\2c\_build\Release\FindTextDialog.obj"
 "\myProject\GPL 2c\2c\_build\Release\FunctionList.obj"
 "\myProject\GPL 2c\2c\_build\Release\InputDate.obj"
@@ -161,9 +160,10 @@ Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12B.tmp" with contents
 "\myProject\GPL 2c\2c\_build\Release\XHyperLink.obj"
 "\myProject\GPL 2c\2c\_build\Release\MyDataExchange.obj"
 "\myProject\GPL 2c\2c\_build\Release\MyDropTarget.obj"
+"\myProject\GPL 2c\2c\_build\Release\Enterprise.res"
 "\myProject\GPL 2c\2c\_build\GUI-DLL\ProfUIS221ym.lib"
 ]
-Creating command line "link.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSP12B.tmp""
+Creating command line "link.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA0.tmp""
 
 CREDITS\add.txt
 CREDITS\CREDITS.CPP
@@ -177,6 +177,116 @@ Linking...
 
 <h3>Results</h3>
 Enterprise.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ServerCOM - Win32 Release MinDependency--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA4.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"../../../_build/ReleaseMinDependency/ServerCOM.pdb" /machine:I386 /def:".\ServerCOM.def" /out:"../../../_build/bin/ServerCOM.dll" /implib:"../../../_build/ReleaseMinDependency/ServerCOM.lib" 
+"\myProject\GPL 2c\2c\_build\ReleaseMinDependency\Connect.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseMinDependency\ServerCOM.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseMinDependency\StdAfx.obj"
+"\myProject\GPL 2c\2c\_build\ReleaseMinDependency\ServerCOM.res"
+"..\..\..\_build\bin\Enterprise.lib"
+]
+Creating command line "link.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA4.tmp""
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA5.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\myProject\GPL 2c\2c\_build\bin\ServerCOM.dll"
+echo regsvr32 exec. time > ".\../../../_build/ReleaseMinDependency\regsvr32.trg"
+]
+Creating command line ""C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA5.bat""
+Linking...
+   Creating library ../../../_build/ReleaseMinDependency/ServerCOM.lib and object ../../../_build/ReleaseMinDependency/ServerCOM.exp
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+ServerCOM.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ServerSQL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA9.tmp" with contents
+[
+/nologo /dll /profile /map:"../../../_build/ServerSQLRelease/ServerSQL.map" /machine:I386 /out:"../../../_build/bin/ServerSQL.dll" /implib:"../../../_build/ServerSQLRelease/ServerSQL.lib" 
+"\myProject\GPL 2c\2c\_build\ServerSQLRelease\OutToDebug.obj"
+"\myProject\GPL 2c\2c\_build\ServerSQLRelease\ServerSQL.obj"
+"\myProject\GPL 2c\2c\_build\ServerSQLRelease\SQLLite.obj"
+"\myProject\GPL 2c\2c\_build\ServerSQLRelease\StdAfx.obj"
+".\sqlitedll\sqlite.lib"
+"..\..\..\_build\bin\Enterprise.lib"
+]
+Creating command line "link.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSPA9.tmp""
+<h3>Output Window</h3>
+Linking...
+   Creating library ../../../_build/ServerSQLRelease/ServerSQL.lib and object ../../../_build/ServerSQLRelease/ServerSQL.exp
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPAD.bat" with contents
+[
+@echo off
+copy   sqlitedll\sqlite.dll   ..\..\..\_build\bin\
+copy   ..\..\MySQL\lib\libmySQL.dll   ..\..\..\_build\bin\
+]
+Creating command line ""C:\DOCUME~1\ß\LOCALS~1\Temp\RSPAD.bat""
+
+‘ª®¯¨à®¢ ­® ä ©«®¢:         1.
+‘ª®¯¨à®¢ ­® ä ©«®¢:         1.
+
+
+
+<h3>Results</h3>
+ServerSQL.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Test - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+WinSock.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ZipArchive - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ZipArchive.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: plug2c - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ß\LOCALS~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /dll /incremental:no /pdb:"../../../_build/PluginRelease/reestr.pdb" /machine:I386 /out:"../../../_build/bin/reestr.dll" /implib:"../../../_build/PluginRelease/reestr.lib" 
+"\myProject\GPL 2c\2c\_build\PluginRelease\registry.obj"
+"\myProject\GPL 2c\2c\_build\PluginRelease\StdAfx.obj"
+"..\..\..\_build\bin\Enterprise.lib"
+]
+Creating command line "link.exe @"C:\DOCUME~1\ß\LOCALS~1\Temp\RSPAE.tmp""
+<h3>Output Window</h3>
+Linking...
+   Creating library ../../../_build/PluginRelease/reestr.lib and object ../../../_build/PluginRelease/reestr.exp
+
+
+
+<h3>Results</h3>
+reestr.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: profuislib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+ProfUIS221ym.lib - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

@@ -947,7 +947,7 @@ SOURCE=.\res\toolbar2.bmp
 # End Source File
 # Begin Source File
 
-SOURCE=".\Пиктограмки.bmp"
+SOURCE=".\Piktogramki.bmp"
 # End Source File
 # End Group
 # Begin Group "Интерпретатор!!"

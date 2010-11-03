@@ -1044,7 +1044,7 @@ IDB_MENU_BUTTON         BITMAP  DISCARDABLE     "DocumentBar_src\\MenuButton.bmp
 IDR_MODULE              BITMAP  MOVEABLE PURE   "res\\module.bmp"
 IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\module1.bmp"
 IDR_EDITBAR             BITMAP  DISCARDABLE     "res\\dyntoolbar.bmp"
-IDB_BITMAP4             BITMAP  DISCARDABLE     "Пиктограмки.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "Piktogramki.bmp"
 IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
 IDR_CONFIGTOOLBAR       BITMAP  MOVEABLE PURE   "res\\configto.bmp"
 IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
